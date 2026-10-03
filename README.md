@@ -1,4 +1,4 @@
-# The Sanctum Dashboard
+# The Linux Field Notes
 
 Minimalist field notes on Linux and basic commands - designed for personal use of **George Freedom**. 
 
