@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="cs">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Linux Field Notes — praktická referenční příručka pro Linux.">
+  
+  <title>Linux Field Notes</title>
+  <!-- Pico CSS: minimal semantic styling -->
+  <link rel="stylesheet" href="css/pico.min.css">
+  <!-- Custom visual layer -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <div class="eyebrow">FIELD MANUAL / LINUX</div>
+        <a class="site-title" href="./">LINUX FIELD NOTES</a>
+      </div>
+
+      <div class="document-code">FM-001 / REV 1.0</div>
+    </div>
+  </header>
+
+  <main class="container layout">
+    <aside class="sidebar" aria-label="Dokumenty">
+      <!-- DETAILS - above SIDEBAR-->
+      <div class="sidebar-label">DOCUMENTS</div>
+
+      <!-- SIMPLE SIDEBAR - with Documents -->
+      <nav id="document-nav">
+        <button
+          class="doc-link active"
+          data-file="content/01-linux-basics.md"
+          type="button"
+        >
+          <span class="doc-number">01</span>
+          <span>
+            <strong>Linux Basics</strong>
+            <small>základy systému</small>
+          </span>
+        </button>
+
+        <button
+          class="doc-link"
+          data-file="content/02-linux-commands.md"
+          type="button"
+        >
+          <span class="doc-number">02</span>
+          <span>
+            <strong>Linux Commands</strong>
+            <small>příkazy &amp; reference</small>
+          </span>
+        </button>
+      </nav>
+
+      <!-- DETAILS - below SIDEBAR -->
+      <div class="sidebar-note">
+        <span>STATUS</span>
+        STATIC / LOCAL CONTENT
+      </div>
+    </aside>
+
+    <!-- DETAILS - above Content section -->
+    <section class="content-panel">
+      <div class="content-meta">
+        <span id="document-status">DOCUMENT 01</span>
+        <span>LINUX / REFERENCE</span>
+      </div>
+
+      <!-- CONTENT -->
+      <article id="markdown-content" class="markdown-body">
+        <p class="loading">Loading field notes...</p>
+      </article>
+
+      <!-- FOOTER -->
+      <footer class="content-footer">
+        <span>Personal Notes</span>
+        <span>Designed by George Freedom © 2026</span>
+      </footer>
+
+    </section>
+  </main>
+
+  <!-- Marked.js: Markdown → HTML -->
+  <script src="js/marked.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

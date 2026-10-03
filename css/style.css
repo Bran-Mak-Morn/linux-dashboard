@@ -1,0 +1,440 @@
+:root {
+  --sand-950: #211f1a;
+  --sand-900: #29261f;
+  --sand-800: #383229;
+  --sand-700: #51483a;
+  --sand-600: #75664e;
+  --sand-500: #9d8968;
+  --sand-400: #bca47c;
+  --sand-300: #d1c1a3;
+  --sand-200: #e3d7c0;
+  --sand-100: #eee7d9;
+  --paper: #f4efe4;
+  --ink: #383329;
+  --muted: #716957;
+  --olive: #66694d;
+  --warning: #8b6338;
+
+  --pico-font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --pico-font-size: 100%;
+  --pico-background-color: var(--paper);
+  --pico-color: var(--ink);
+  --pico-primary: var(--sand-700);
+  --pico-primary-hover: var(--sand-800);
+  --pico-primary-focus: rgba(117, 102, 78, 0.2);
+  --pico-border-color: var(--sand-300);
+  --pico-muted-color: var(--muted);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(rgba(80, 68, 48, 0.025) 1px, transparent 1px),
+    var(--paper);
+  background-size: 100% 28px;
+  color: var(--ink);
+}
+
+.container {
+  width: min(1180px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+/* --------------------------------------------------
+   HEADER
+-------------------------------------------------- */
+
+.site-header {
+  background: var(--sand-950);
+  color: var(--sand-200);
+  border-bottom: 4px solid var(--sand-400);
+}
+
+.header-inner {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.eyebrow,
+.sidebar-label,
+.content-meta,
+.content-footer,
+.document-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  color: var(--sand-400);
+  font-size: 0.72rem;
+  margin-bottom: 0.15rem;
+}
+
+.site-title {
+  color: var(--sand-100);
+  text-decoration: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.site-title:hover {
+  color: white;
+}
+
+.document-code {
+  color: var(--sand-300);
+  font-size: 0.7rem;
+}
+
+/* --------------------------------------------------
+   LAYOUT
+-------------------------------------------------- */
+
+.layout {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 2rem;
+  padding-block: 2rem 3rem;
+}
+
+/* --------------------------------------------------
+   SIDEBAR
+-------------------------------------------------- */
+
+.sidebar {
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+}
+
+.sidebar-label {
+  color: var(--muted);
+  border-bottom: 1px solid var(--sand-300);
+  padding-bottom: 0.55rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.68rem;
+}
+
+#document-nav {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.doc-link {
+  appearance: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  align-items: start;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0.65rem 0.6rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+
+.doc-link:hover {
+  background: rgba(188, 164, 124, 0.15);
+  border-color: var(--sand-300);
+}
+
+.doc-link.active {
+  background: var(--sand-200);
+  border-color: var(--sand-400);
+}
+
+.doc-number {
+  color: var(--sand-700);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+  font-weight: 800;
+}
+
+.doc-link strong {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.doc-link small {
+  display: block;
+  margin-top: 0.1rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.sidebar-note {
+  margin-top: 2rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--sand-300);
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+  font-size: 0.63rem;
+  line-height: 1.6;
+}
+
+.sidebar-note span {
+  display: block;
+  color: var(--olive);
+  font-weight: 800;
+}
+
+/* --------------------------------------------------
+   CONTENT
+-------------------------------------------------- */
+
+.content-panel {
+  min-width: 0;
+}
+
+.content-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--sand-300);
+  color: var(--muted);
+  font-size: 0.65rem;
+}
+
+.markdown-body {
+  padding-top: 1.7rem;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  color: var(--sand-900);
+  font-weight: 800;
+}
+
+.markdown-body h1 {
+  margin-top: 0;
+  margin-bottom: 1.4rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  letter-spacing: -0.025em;
+}
+
+.markdown-body h2 {
+  margin-top: 2.6rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--sand-300);
+  font-size: clamp(1.25rem, 2.8vw, 1.55rem);
+}
+
+.markdown-body h3 {
+  margin-top: 1.8rem;
+  font-size: 1.1rem;
+}
+
+.markdown-body p,
+.markdown-body li {
+  line-height: 1.7;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 1.35rem;
+}
+
+.markdown-body strong {
+  color: var(--sand-800);
+}
+
+.markdown-body hr {
+  margin: 2rem 0;
+  border-color: var(--sand-300);
+}
+
+/* --------------------------------------------------
+   INLINE TERMINAL COMMANDS
+-------------------------------------------------- */
+
+/*
+  Marked.js renders single backticks as <code>.
+  These selectors intentionally target inline code only.
+*/
+
+.markdown-body :not(pre) > code {
+  display: inline-block;
+  padding: 0.08em 0.38em;
+  border: 1px solid var(--sand-300);
+  border-radius: 4px;
+  background: var(--sand-200);
+  color: #76552c;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+  font-size: 0.88em;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* --------------------------------------------------
+   TERMINAL BLOCKS
+-------------------------------------------------- */
+
+.markdown-body pre {
+  position: relative;
+  margin: 1.2rem 0 1.5rem;
+  padding: 1rem 1.1rem;
+  overflow-x: auto;
+  border: 1px solid var(--sand-700);
+  border-left: 4px solid var(--sand-400);
+  border-radius: 5px;
+  background: var(--sand-900);
+  box-shadow: 0 5px 15px rgba(33, 31, 26, 0.08);
+}
+
+.markdown-body pre::before {
+  content: "TERMINAL";
+  display: block;
+  margin-bottom: 0.65rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--sand-700);
+  color: var(--sand-400);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.markdown-body pre code {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--sand-200);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+  font-size: 0.86rem;
+  line-height: 1.65;
+  white-space: pre;
+}
+
+/* --------------------------------------------------
+   BLOCKQUOTES / TABLES / LINKS
+-------------------------------------------------- */
+
+.markdown-body blockquote {
+  margin: 1.3rem 0;
+  padding: 0.7rem 1rem;
+  border-left: 4px solid var(--olive);
+  background: rgba(102, 105, 77, 0.08);
+  color: var(--muted);
+}
+
+.markdown-body table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.markdown-body th {
+  background: var(--sand-200);
+  color: var(--sand-800);
+}
+
+.markdown-body a {
+  color: var(--sand-700);
+  text-decoration-color: var(--sand-400);
+}
+
+.loading {
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+
+.content-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--sand-300);
+  color: var(--muted);
+  font-size: 0.6rem;
+}
+
+/* --------------------------------------------------
+   MOBILE
+-------------------------------------------------- */
+
+@media (max-width: 720px) {
+  .container {
+    width: min(100% - 1.1rem, 1180px);
+  }
+
+  .header-inner {
+    min-height: 68px;
+  }
+
+  .document-code {
+    display: none;
+  }
+
+  .layout {
+    display: block;
+    padding-top: 1rem;
+  }
+
+  .sidebar {
+    position: static;
+    margin-bottom: 1.4rem;
+  }
+
+  #document-nav {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .doc-link {
+    grid-template-columns: 1.7rem 1fr;
+    padding: 0.55rem;
+  }
+
+  .content-meta {
+    font-size: 0.58rem;
+  }
+
+  .markdown-body {
+    padding-top: 1.2rem;
+  }
+
+  .markdown-body pre {
+    margin-inline: -0.15rem;
+    border-radius: 4px;
+    padding: 0.85rem;
+  }
+
+  .markdown-body pre code {
+    font-size: 0.78rem;
+  }
+
+  .content-footer {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}
