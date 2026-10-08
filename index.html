@@ -1,44 +1,52 @@
 <!doctype html>
-<html lang="cs" data-theme="light">
-  
+<html lang="cs">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
+
+  <meta name="color-scheme" content="dark">
   <meta name="description" content="Linux Field Notes — praktická referenční příručka pro Linux.">
-  
+
   <title>Linux Field Notes</title>
-  <!-- Pico CSS: minimal semantic styling -->
-  <link rel="stylesheet" href="css/pico.min.css">
+
   <!-- Custom visual layer -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
   <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
+
       <div>
         <div class="eyebrow">FIELD MANUAL / LINUX</div>
         <a class="site-title" href="./">LINUX FIELD NOTES</a>
       </div>
 
       <div class="document-code">FM-001 / REV 1.0</div>
+
     </div>
   </header>
 
+
   <main class="container layout">
+
+    <!-- SIDEBAR -->
     <aside class="sidebar" aria-label="Dokumenty">
-      <!-- DETAILS - above SIDEBAR-->
+
+      <!-- DETAILS - above SIDEBAR -->
       <div class="sidebar-label">DOCUMENTS</div>
 
       <!-- SIMPLE SIDEBAR - with Documents -->
       <nav id="document-nav">
+
         <button
           class="doc-link active"
           data-file="content/01-linux-basics.md"
-          type="button"
-        >
+          type="button">
+
           <span class="doc-number">01</span>
           <span>
             <strong>Linux Basics</strong>
@@ -49,8 +57,8 @@
         <button
           class="doc-link"
           data-file="content/02-linux-commands.md"
-          type="button"
-        >
+          type="button">
+
           <span class="doc-number">02</span>
           <span>
             <strong>Linux Commands</strong>
@@ -61,14 +69,15 @@
         <button
           class="doc-link"
           data-file="content/03-linux-raspberry.md"
-          type="button"
-        >
+          type="button">
+
           <span class="doc-number">03</span>
           <span>
             <strong>Raspberry</strong>
             <small>instalace OS</small>
           </span>
         </button>
+
       </nav>
 
       <!-- DETAILS - below SIDEBAR -->
@@ -76,10 +85,14 @@
         <span>STATUS</span>
         STATIC / LOCAL CONTENT
       </div>
+
     </aside>
 
-    <!-- DETAILS - above Content section -->
+
+    <!-- CONTENT PANEL -->
     <section class="content-panel">
+
+      <!-- DETAILS - above Content section -->
       <div class="content-meta">
         <span id="document-status">DOCUMENT 01</span>
         <span>LINUX / REFERENCE</span>
@@ -97,7 +110,9 @@
       </footer>
 
     </section>
+
   </main>
+
 
   <!-- Marked.js: Markdown → HTML -->
   <script src="js/marked.min.js"></script>
