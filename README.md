@@ -33,7 +33,7 @@ linux-field-manual/
 
 ## 🔗 Links
 
-- Website: **[Linux Field Notes]([https://pagania.eu](https://linux.georgefreedom.com/))**
+- Website: **[Linux Field Notes](https://linux.georgefreedom.com/)**
 - **[GeorgeFreedom web](https://GeorgeFreedom.com)**
 - **[GeorgeFreedom LinkedIn](https://www.linkedin.com/in/georgefreedom/)**
 
