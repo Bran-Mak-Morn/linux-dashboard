@@ -34,8 +34,8 @@ linux-field-manual/
 ## 🔗 Links
 
 - Website: **[Linux Field Notes](https://linux.georgefreedom.com/)**
-- **[GeorgeFreedom web](https://GeorgeFreedom.com)**
-- **[GeorgeFreedom LinkedIn](https://www.linkedin.com/in/georgefreedom/)**
+- **[George Freedom: web](https://GeorgeFreedom.com)**
+- **[George Freedom: LinkedIn](https://www.linkedin.com/in/georgefreedom/)**
 
 ## 📜 License:
 
