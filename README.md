@@ -7,13 +7,9 @@ Built for learning and practising. Zero-backend architecture with client-side Ma
 ## Tech Stack
 
 - **HTML5** (Semantic layout and single-page container structure)
-- **Pico CSS** (Minimalist, lightweight classless CSS framework)
 - **Custom CSS** (For military / desert style)
 - **Marked.js** (Lightweight, client-side asynchronous Markdown compilation)
 - **GitHub Pages** (Production hosting and deployment via global CDN)
-
-## Key Features
-
 
 ## Architecture
 
@@ -26,7 +22,6 @@ linux-field-manual/
 ├── content/
 │
 ├── css/
-│   ├── pico.min.css
 │   └── style.css
 ├── js/
 │   ├── marked.min.js
@@ -36,7 +31,13 @@ linux-field-manual/
 └── README.md           # System documentation
 ```
 
+## 🔗 Links
+
+- Website: **[Linux Field Notes]([https://pagania.eu](https://linux.georgefreedom.com/))**
+- **[GeorgeFreedom web](https://GeorgeFreedom.com)**
+- **[GeorgeFreedom LinkedIn](https://www.linkedin.com/in/georgefreedom/)**
 
 ## 📜 License:
 
 Copyright (c) 2026 Jiří Svoboda (George Freedom) / George Freedom Tech
+
